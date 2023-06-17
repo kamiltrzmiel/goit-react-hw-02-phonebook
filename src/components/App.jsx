@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
-import ContactList from './ContactList';
-import ContactForm from './ContactForm';
-import Filter from './Filter';
+import ContactList from './ContactList/ContactList';
+import ContactForm from './ContactForm/ContactForm';
+import Filter from './Filter/Filter';
 import { nanoid } from 'nanoid';
 
 export class App extends Component {
   state = {
     contacts: [
-      { id: 'id-1', name: 'Rosie Simpson', number: '459-12-56' },
-      { id: 'id-2', name: 'Hermione Kline', number: '443-89-12' },
-      { id: 'id-3', name: 'Eden Clements', number: '645-17-79' },
-      { id: 'id-4', name: 'Annie Copeland', number: '227-91-26' },
+      { id: 'id-1', name: 'Jose Arcadio Morales', number: '+34 459-123-563' },
+      { id: 'id-2', name: 'Jan Nowakowski', number: '+48 443-859-125' },
+      { id: 'id-3', name: 'Bruno Bierhals', number: '+49 645-122-792' },
+      { id: 'id-4', name: 'Rolf Ruckzug', number: '+43 227-252-929' },
     ],
     filter: ''
   };
@@ -56,9 +56,9 @@ export class App extends Component {
 
     return (
       <div>
-        <h1>Phonebook</h1>
+        <h1 style={{ textAlign: 'center' }}>Phonebook</h1>
         <ContactForm onAddContact={this.addContact} />
-        <h2>Contacts</h2>
+        <h2 style={{ textAlign: 'center' }}>Contacts</h2>
         <Filter value={filter} onChangeFilter={this.changeFilter} />
         <ContactList contacts={filteredContacts} onDeleteContact={this.deleteContact} />
       </div>
