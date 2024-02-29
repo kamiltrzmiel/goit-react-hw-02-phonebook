@@ -1,1 +1,1 @@
-# [Visit site REACT-HW-02-PHONEBOOK](https://kamiltrzmiel.github.io/goit-react-hw-02-phonebook/)
+# [Visit site](https://kamiltrzmiel.github.io/react-02-phonebook/)
